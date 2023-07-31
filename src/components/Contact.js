@@ -67,7 +67,7 @@ function Contact() {
     <Header />
       <div className="container mb-5 mt-4">
         <div className="row">
-          <div className="col-md-6" data-aos="fade-right">
+          <div className="col-md-6" data-aos="fade-up">
             <div className="mx-auto my-0 mx-4 px-3 shadow py-3" >
 
               <div className="d-flex justify-content-between align-items-center ">
@@ -122,7 +122,7 @@ function Contact() {
             </div>
           </div>
           <div className="col-md-6 align-items-center d-flex">
-            <div className="mx-md-5 mx-auto w-100 py-3  rounded mb-5" data-aos="fade-left" style={{backgroundColor:"#315A75"}}>
+            <div className="mx-md-5 mx-auto w-100 py-3  rounded mb-5" data-aos="fade-up" style={{backgroundColor:"#315A75"}}>
                 <h3 className='text-center text-light '>Contact Us</h3>
                 <div className="text ps-4 mt-4">
                   <h1 className="text-start text-light my-3" style={{fontSize:"16px",fontFamily:"karta"}}> <i className="bi bi-phone me-3"></i> +917435878256</h1>

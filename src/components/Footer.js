@@ -39,12 +39,12 @@ function Footer() {
                 </div>
 
                 <div className="container mx-auto   mt-5 d-flex flex-md-row flex-column justify-content-md-between justify-content-center align-items-center">
-                    <div className="card1  d-flex flex-column justify-content-center align-items-center" data-aos="fade-right" style={{ maxWidth: "300px" }}>
+                    <div className="card1  d-flex flex-column justify-content-center align-items-center" data-aos="fade-down" style={{ maxWidth: "300px" }}>
                         <img src="dark.png" alt="" className="img-fluid" style={{ maxHeight: "90px" }} />
                         <h5 className='text-center ps-3' style={{ fontSize: "30px", fontWeight: "700", letterSpacing: "3px" }}>INTERNACC</h5>
                         <h6 style={{ fontSize: "12px" }}>INSPIRE <span style={{fontWeight:"900"}}>&#183;</span> IGNITE <span style={{fontWeight:"900"}}>&#183;</span> TRANSFORM <span style={{fontWeight:"900"}}>&#183;</span> SHINE</h6>
                     </div>
-                    <div className="card2 d-flex flex-column justify-content-center" data-aos="fade-left" style={{ maxWidth: "300px" }}>
+                    <div className="card2 d-flex flex-column justify-content-center" data-aos="fadedown" style={{ maxWidth: "300px" }}>
                         <div className='d-flex justify-content-center gap-3'>
                             <i className="bi bi-instagram" style={{ fontSize: "30px" }}></i>
                             <i className="bi bi-facebook" style={{ fontSize: "30px" }}></i>

@@ -5,7 +5,7 @@ import Header from './Header'
 function Aboutus() {
   return (
     <>
-    <Header />
+      <Header />
       <div className="container" >
         <div className="row my-5">
           <h1 className="text-center pb-5" data-aos="fade-up" style={{
@@ -22,7 +22,9 @@ function Aboutus() {
             textAlign: 'justify',
             fontFamily: 'Source Sans Pro', fontSize: '28px',
           }}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            We are a leading global provider of international internships and student accommodation solutions.
+            With a strong focus on facilitating meaningful professional experiences for students and young professionals, we strive to connect talented individuals with reputable organizations across various industries.
+            By offering comprehensive internship programs and high-quality accommodation options, we enable students to gain valuable skills, expand their global networks, and enhance their personal and professional growth.
           </p>
         </div>
         <div className="row mb-5">
@@ -50,7 +52,7 @@ function Aboutus() {
               lineHeight: 'normal',
               letterSpacing: '-1.5px',
             }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga rerum voluptate beatae pariatur quibusdam! Fuga molestiae rem quis rerum, ex vero, voluptatem porro nihil at sed minus, accusamus deleniti ducimus perferendis quod. Quae ea consequuntur impedit, itaque sit quas iure sequi in nulla ducimus aut eveniet est. Qui, animi magnam.
+              Our vision is to be the leading provider of international internships and student accommodation, empowering students to enhance their global perspective, gain valuable professional experience, and foster cultural understanding. At Internacc, we envision a future where every student has the opportunity to embark on a transformative international internship experience while enjoying secure and enriching student accommodation. We strive to lead the industry in providing comprehensive solutions that empower students to unlock their full potential and thrive in a dynamic, interconnected world.
             </p>
           </div>
         </div>
@@ -76,7 +78,9 @@ function Aboutus() {
               lineHeight: 'normal',
               letterSpacing: '-1.5px',
             }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.
+              Facilitating Global Opportunities :
+              We strive to connect students with diverse international internship opportunities, enabling them to gain valuable professional experience in different industries and cultures. We aim to broaden their horizons and prepare them for success in the global workforce.
+
             </p>
             <hr className='d-block mx-auto mt-5' style={{ minHeight: "3px", backgroundColor: '#FEECEC' }} />
             <p className="py-2" style={{
@@ -89,7 +93,8 @@ function Aboutus() {
               lineHeight: 'normal',
               letterSpacing: '-1.5px',
             }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.
+              Seamless Accommodation Solutions :
+              We are committed to providing students with safe, comfortable, and affordable accommodation options in their host countries. Our mission is to ensure that students can focus on their internships and studies, knowing that they have a supportive and secure living environment.
             </p></div>
           <div className="col-md-6 bg-secondary" data-aos="fade-down"></div>
         </div>
@@ -104,17 +109,17 @@ function Aboutus() {
         }} data-aos="fade-right">Core Team</h1>
         <div className="row mb-5 text-light" data-aos="fade-down">
 
-          <div className='offset-md-1 col-md-3 my-4 mx-auto' style={{ backgroundColor: "#D7D7D7", minHeight: "400px", position: "relative", maxWidth: "350px",backgroundImage:"url('mh.png')",backgroundPosition:"center",backgroundSize:"cover"}}>
+          <div className='offset-md-1 col-md-3 my-4 mx-auto' style={{ backgroundColor: "#D7D7D7", minHeight: "400px", position: "relative", maxWidth: "350px", backgroundImage: "url('mh.png')", backgroundPosition: "center", backgroundSize: "cover" }}>
             <h4 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 48 }}>Mary Hiwale</h4>
             <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 22 }}>Co-founder</h5>
             <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 0 }}>University Name</h5>
           </div>
-          <div className='offset-md-1 col-md-3 my-4 rounded mx-auto' style={{ backgroundColor: "#D7D7D7", minHeight: "400px", position: "relative", maxWidth: "350px",backgroundImage:"url('ht.jpg')",backgroundPosition:"center",backgroundSize:"cover" }}>
+          <div className='offset-md-1 col-md-3 my-4 rounded mx-auto' style={{ backgroundColor: "#D7D7D7", minHeight: "400px", position: "relative", maxWidth: "350px", backgroundImage: "url('ht.jpg')", backgroundPosition: "center", backgroundSize: "cover" }}>
             <h4 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 48 }}>Hanut Trivedi</h4>
             <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 22 }}>Co-founder & CEO</h5>
             <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 0 }}>University Name</h5>
           </div>
-          <div className='offset-md-1 col-md-3 my-4 rounded mx-auto' style={{ backgroundColor: "#D7D7D7", minHeight: "400px", position: "relative", maxWidth: "350px",backgroundImage:"url('nt.jpg')",backgroundPosition:"center",backgroundSize:"cover" }}>
+          <div className='offset-md-1 col-md-3 my-4 rounded mx-auto' style={{ backgroundColor: "#D7D7D7", minHeight: "400px", position: "relative", maxWidth: "350px", backgroundImage: "url('nt.jpg')", backgroundPosition: "center", backgroundSize: "cover" }}>
             <h4 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 48 }}>Nishi Thacker</h4>
             <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 22 }}>Co-founder & Director</h5>
             <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 0 }}>University Name</h5>

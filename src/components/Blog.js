@@ -61,7 +61,7 @@ function Blog(props) {
         <h1 className="text-center mb-5" style={{ fontWeight: 700, fontSize: "50px", color: "#ffffff" }}>Our Latest Blogs</h1>
       </div>
       <div className="container-fluid px-3 my-5">
-        <h3 className="text-start" data-aos="fade-right" style={{ color: "#C87437", fontFamily: "cookie", fontWeight: "400", fontSize: "75px" }}>
+        <h3 className="text-start" data-aos="fade-up" style={{ color: "#C87437", fontFamily: "cookie", fontWeight: "400", fontSize: "75px" }}>
           Reading
         </h3>
         <div className="row row-cols-xl-3  row-cols-lg-2 row-cols-1">
@@ -81,7 +81,7 @@ function Blog(props) {
       <div className="container my-5 px-3">
 
         <div className="row ">
-          <div className="mt-5 col-md-6 shadow-lg py-4" data-aos="fade-right">
+          <div className="mt-5 col-md-6 shadow-lg py-4" data-aos="fade-up">
             <div className="mx-auto my-0 mx-4 px-3" >
 
               <div className="d-flex justify-content-between align-items-center ">

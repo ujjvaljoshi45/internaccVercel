@@ -95,7 +95,7 @@ function Home(props) {
         <>
             <ToastContainer />
             <Header />
-            <div className="container-fluid w-100" style={{ minHeight: "600px", backgroundColor: "rgba(224, 224, 224, 1)", boxShadow: "0 4 4 0" }}>
+            <div className="container-fluid " style={{ minHeight: "600px", backgroundColor: "rgba(224, 224, 224, 1)" }}>
                 <div className="container pt-3 d-flex justify-content-center d-md-block">
                     <div className="row ">
                         <div className="col-lg-8 mx-auto d-flex flex-column justify-cotent-start" data-aos="fade-right">
@@ -123,7 +123,7 @@ function Home(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 pb-5 mt-lg-0 mt-5" data-aos="fade-left" style={{ backgroundImage: `linear-gradient(180deg,#F57455A6,#315A75EB)`, borderRadius: "80%" }}>
+                        <div className="col-lg-4 pb-5 mt-lg-0 mt-5" data-aos="fade-up" style={{ backgroundImage: `linear-gradient(180deg,#F57455A6,#315A75EB)`, borderRadius: "80%" }}>
                             <img src="avatar.png" alt="" className="img-fluid" />
                         </div>
                     </div>
@@ -176,14 +176,14 @@ function Home(props) {
             </div>
 
 
-            <div className="container" data-aos="fade-right" style={{ position: "relative", minHeight: "70vh" }}>
+            <div className="container" data-aos="fade-up" style={{ position: "relative", minHeight: "70vh" }}>
                 <div className="card1 rounded" style={{ position: "absolute", width: "60%", backgroundColor: "#315A75", minHeight: "65vh", zIndex: 0 }}>
                     <h1 className="text-start my-5 w-50 ms-md-5 ms-2 text-light" style={{}}>
                         Get more informations about internship and Accomodations
                     </h1>
                     <button className="btn btn-light d-block ms-md-5 ms-2 px-4 fs-5">Read More</button>
                 </div>
-                <div className="card2 bg-secondary rounded" style={{ position: "absolute", minHeight: "50vh", width: "50%", right: 0, top: "8vh", zIndex: 5 }}></div>
+                <div className="card2 bg-secondary rounded d-md-inline-block" style={{ position: "absolute", minHeight: "50vh", width: "50%", right: 10, top: "8vh", zIndex: 5 }}></div>
             </div>
 
 
@@ -198,7 +198,7 @@ function Home(props) {
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-body">
-                                <div className="mx-auto my-0 mx-4 px-3" >
+                                <div className="mx-auto my-0 mx-md-4 mx-0 px-md-3 px-1" >
 
                                     <div className="d-flex justify-content-between align-items-center ">
                                         <h3>Send a Message</h3>
@@ -223,7 +223,7 @@ function Home(props) {
 
                                     <p className="mt-3 mb-2 text-secondary">Choose Topic</p>
 
-                                    <div className="d-flex gap-4 flex-wrap">
+                                    <div className="d-flex gap-md-4 gap-2 flex-wrap">
                                         <input type="radio" name='topic' className="btn-check " id="btn-check-1-outlined" defaultChecked autoComplete="off" onChange={() => { updateData({ ...data, topic: "course" }) }} />
                                         <label className="btn btn-outline-secondary rounded-pill px-4 py-1 " htmlFor="btn-check-1-outlined" >Course</label>
 

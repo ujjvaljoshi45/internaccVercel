@@ -10,29 +10,12 @@ function Accomodation() {
             <div className="container">
                 <div className="row" data-aos="fade-right">
                     <img src="worldmap.png" className="img-fluid" style={{width:"98vw"}} />
-                    <h1 style={{
-                        color: '#000',
-                        fontFamily: 'cookie',
-                        fontSize: '96px',
-                        fontStyle: 'normal',
-                        fontWeight: '400',
-                        lineHeight: 'normal',
-                        letterSpacing: '9.6px'
-                    }}>Reach</h1>
-                    <h1 style={{
-                        color: "#717372",
-                        fontFamily: "cabin",
-                        letterSpacing: "9.6px",
-                        fontSize: '48px',
-                    fontStyle: 'normal',
-                    fontWeight: '600',
-                    lineHeight: 'normal',
-                        }}>GLOBAL </h1>
+                    
                 <h1 className="text-center mt-5" data-aos="fade-up">LOREM IPSUM</h1>
                 <p className="text-center pb-4" data-aos="fade-up">lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text
                     lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text lorem ipsum dummy text </p><br />
 
-                <h1 className="text-center my-4 mt-5" data-aos="fade-left">
+                <h1 className="text-center my-4 mt-5" data-aos="fade-down">
                     WE ARE AVAILABLE IN
                 </h1>
                 <div className=" mt-5 row row-cols row-cols-2 row-cols-lg-4  mx-auto ">

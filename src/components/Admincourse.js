@@ -5,13 +5,15 @@ import { Client, Databases, ID, Query, Storage } from 'appwrite'
 import { toast } from 'react-toastify'
 function Admincourse(props) {
     const [isLogin, updateLogin] = useState()
-    const {course} = props
+    const { course } = props
     const [data, updateData] = useState({
         course: "",
         image: "",
         minage: 9,
         maxage: 24,
-        price:0,
+        duration: 0,
+        mincost:0,
+        maxcost:0,
         subject: "",
         university: "",
         description: ""
@@ -25,7 +27,7 @@ function Admincourse(props) {
     }
     const handleSubmit = () => {
 
-        if (data.course == "" || data.image == "" || data.subject == "" || data.university == "" || data.description == "") { } else {
+        if (data.course == "" || data.image == "" || data.subject == "" || data.university == "" || data.description == "" || data.mincost == "" || data.maxcost == "" || data.duration=="") { } else {
             const client = new Client();
             client
                 .setEndpoint('https://cloud.appwrite.io/v1')
@@ -58,6 +60,9 @@ function Admincourse(props) {
                         image: imageUrl,
                         minAge: data.minage,
                         maxAge: data.maxage,
+                        minCost:data.mincost,
+                        maxCost:data.maxcost,
+                        duration:data.duration,
                         subject: data.subject,
                         university: data.university.toLowerCase(),
                         description: data.description
@@ -123,16 +128,29 @@ function Admincourse(props) {
                         </div>
                         <div className="col-md-6">
                             <div className="form-group my-4">
-                                <label htmlFor="price" style={{ fontSize: "26px", fontWeight: "600" }}>Price : </label>
-                            <input type="number" name="price" id="price" className="form-control fs-5 " onChange={handleChange} />
+                                <label htmlFor="duration" style={{ fontSize: "26px", fontWeight: "600" }}>Duration (in months) : </label>
+                                <input type="number" name="duration" id="duration" className="form-control fs-5 mt-1" onChange={handleChange} />
                             </div>
                         </div>
                     </div>
-
                     <div className="row">
                         <div className="col-md-6">
                             <div className="form-group">
-                                <label htmlFor="minage" className="form-label">Min age : </label>
+                                <label htmlFor="mincost" className="form-label" style={{ fontSize: "26px", fontWeight: "600" }}>Minimum Cost : </label>
+                                <input type="number" name="mincost" id="mincost" className="form-control fs-5" onChange={handleChange} />
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <div className="form-group">
+                                <label htmlFor="maxcost" className="form-label" style={{ fontSize: "26px", fontWeight: "600" }}>Maximum Cost : </label>
+                                <input type="number" name="maxcost" id="maxcost" className="form-control fs-5" onChange={handleChange} />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row mt-3">
+                        <div className="col-md-6">
+                            <div className="form-group">
+                                <label htmlFor="minage" className="form-label" style={{ fontSize: "26px", fontWeight: "600" }}>Min age : </label>
                                 <select name="minage" id="minage" className="form-select" onChange={(e) => { updateData({ ...data, minage: parseInt(e.target.value) }) }}>
                                     {[9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24].map((element, index) => {
                                         return <option key={index} value={element}>{element}</option>
@@ -142,7 +160,7 @@ function Admincourse(props) {
                         </div>
                         <div className="col-md-6">
                             <div className="form-group">
-                                <label htmlFor="maxage" className="form-label">Max age : </label>
+                                <label htmlFor="maxage" className="form-label" style={{ fontSize: "26px", fontWeight: "600" }}>Max age : </label>
                                 <select name="maxage" id="maxage" className="form-select" onChange={(e) => { updateData({ ...data, maxage: parseInt(e.target.value) }) }}>
                                     {[9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24].map((element, index) => {
                                         return <option key={index} value={element}>{element}</option>
@@ -168,34 +186,34 @@ function Admincourse(props) {
                 </div>
                 <div className="px-2 container-fluid my-5">
                     <h2 className="text-center my-3 mt-5">Delete Course</h2>
-                <table className="w-100 table-fluid table-bordered table-striped table-hover" >
-                    <thead>
-                        <tr>
-                            <td className="fs-3 text-center">sr no.</td>
-                            <td className="fs-3 text-center">Name</td>
-                            <td className="fs-3 text-center">Subject</td>
-                            <td className="fs-3 text-center">Age Group</td>
-                            <td className="fs-3 text-center">Description</td>
-                            <td className="fs-3 text-center">Price</td>
-                            <td className="fs-3 text-center">Action</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {course.map((element,index) => {
-                            return <tr key={index}>
-                                <td className='ps-2 fs-5'>{index+1}</td>
-                                <td className='ps-2 fs-5'>{element.name}</td>
-                                <td className='ps-2 fs-5'>{element.subject}</td>
-                                <td className='ps-2 fs-5'>{element.minAge} - {element.maxAge}</td>
-                                <td className='ps-2 fs-5'>{element.description}</td>
-                                <td className='ps-2 fs-5'>{element.price}</td>
-                                <td className='ps-2 fs-5'><button id={element.$id} className="btn btn-danger my-1 mx-auto d-block px-2" onClick={handleDelete}>Delete</button></td>
+                    <table className="w-100 table-fluid table-bordered table-striped table-hover" >
+                        <thead>
+                            <tr>
+                                <td className="fs-3 text-center">sr no.</td>
+                                <td className="fs-3 text-center">Name</td>
+                                <td className="fs-3 text-center">Subject</td>
+                                <td className="fs-3 text-center">Age Group</td>
+                                <td className="fs-3 text-center">Description</td>
+                                <td className="fs-3 text-center">Price</td>
+                                <td className="fs-3 text-center">Action</td>
                             </tr>
-                        })}
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            {course.map((element, index) => {
+                                return <tr key={index}>
+                                    <td className='ps-2 fs-5'>{index + 1}</td>
+                                    <td className='ps-2 fs-5'>{element.name}</td>
+                                    <td className='ps-2 fs-5'>{element.subject}</td>
+                                    <td className='ps-2 fs-5'>{element.minAge} - {element.maxAge}</td>
+                                    <td className='ps-2 fs-5'>{element.description}</td>
+                                    <td className='ps-2 fs-5'>{element.price}</td>
+                                    <td className='ps-2 fs-5'><button id={element.$id} className="btn btn-danger my-1 mx-auto d-block px-2" onClick={handleDelete}>Delete</button></td>
+                                </tr>
+                            })}
+                        </tbody>
+                    </table>
                 </div>
-                </div> : <h3 className="my-5 text-center">Login Required for Admin page <Link to="/admin-login">Go To Login</Link></h3>}
+            </div> : <h3 className="my-5 text-center">Login Required for Admin page <Link to="/admin-login">Go To Login</Link></h3>}
 
 
         </>

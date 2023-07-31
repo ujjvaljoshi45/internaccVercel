@@ -10,7 +10,6 @@ function Course(props) {
   const { course } = props
   console.log(course);
 
-  window.scroll(0,0)
   useEffect(() => {
 
     let tempSubjList = []
