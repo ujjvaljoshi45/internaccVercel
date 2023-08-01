@@ -1,6 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, useHref } from 'react-router-dom'
 function Footer() {
+    const url = useHref()
+    // console.log(url);
+    useEffect(()=> {
+        window.scrollTo(0,0)
+    },[url])
     return (
         <>
             <div className="container-fluid py-4 pb-4"  style={{ backgroundColor: "#EDEDED" }}>
