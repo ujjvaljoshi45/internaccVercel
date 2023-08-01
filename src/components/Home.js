@@ -96,10 +96,10 @@ function Home(props) {
             <ToastContainer />
             <Header />
             <div className="container-fluid " style={{ minHeight: "600px", backgroundColor: "rgba(224, 224, 224, 1)" }}>
-                <div className="container pt-3 d-flex justify-content-center d-md-block">
-                    <div className="row ">
-                        <div className="col-lg-8 mx-auto d-flex flex-column justify-cotent-start" data-aos="fade-right">
-                            <h1 className='mt-5 ' style={{ fontSize: "4.0rem", fontFamily: "sans-serif", fontWeight: 600 }}>Get international</h1>
+                <div className="container pt-3 d-flex justify-content-center  d-md-block">
+                    <div className="row align-items-start">
+                        <div className="col-lg-8 mx-auto d-flex flex-column justify-content-start" data-aos="fade-right">
+                            <h1 className='mt-5 ' style={{ fontSize: "3.5rem", fontFamily: "sans-serif", fontWeight: 600 }}>Get international</h1>
                             <h1 style={{
                                 fontSize: "2.5rem", fontFamily: "sans-serif",
                                 backgroundImage: `linear-gradient(90deg,rgba(185, 71, 44, 0.72),rgba(49, 90, 117, 1))`,
@@ -123,8 +123,8 @@ function Home(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 pb-5 mt-lg-0 mt-5" data-aos="fade-up" style={{ backgroundImage: `linear-gradient(180deg,#F57455A6,#315A75EB)`, borderRadius: "80%" }}>
-                            <img src="avatar.png" alt="" className="img-fluid" />
+                        <div className="col-lg-4 pb-5 mt-lg-0 mt-5 mx-md-0 mx-auto" data-aos="fade-up" style={{ backgroundImage: `linear-gradient(180deg,#F57455A6,#315A75EB)`, borderRadius: "90%" ,maxWidth:"95vw"}}>
+                            <img src="avatar.png" alt="" className="img-fluid d-block mx-auto"  />
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@ function Home(props) {
                         <Linkcards title="Business & Enterprenuership" />
                     </div>
                     <div className="col-md-4">
-                        <div className="linkcard rounded border border-2 border-dark px-5 py-4 w-100 my-4" style={{ backgroundColor: "#315A75" }} >
+                        <div className="linkcard rounded border border-2 border-dark px-lg-5 px-2 py-4 w-100 my-4" style={{ backgroundColor: "#315A75" }} >
                             <Link to="/course" className="text-start text-light text-decoration-none  " style={{ fontSize: "25px", fontWeight: "700" }}>Explore Other <i className="ms-2 bi bi-arrow-right "></i></Link>
                         </div>
                     </div>
@@ -183,7 +183,7 @@ function Home(props) {
                     </h1>
                     <button className="btn btn-light d-block ms-md-5 ms-2 px-4 fs-5">Read More</button>
                 </div>
-                <div className="card2 bg-secondary rounded d-md-inline-block" style={{ position: "absolute", minHeight: "50vh", width: "50%", right: 10, top: "8vh", zIndex: 5 }}></div>
+                <div className="card2 bg-secondary rounded d-md-inline-block" style={{ position: "absolute", minHeight: "50vh", width: "50%", right: 0, top: "8vh", zIndex: 5 }}></div>
             </div>
 
 
@@ -193,12 +193,11 @@ function Home(props) {
             <button type="button" id='modalBtn' className="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Launch demo modal
             </button>
-            <form autoComplete='off'>
-                <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-body">
-                                <div className="mx-auto my-0 mx-md-4 mx-0 px-md-3 px-1" >
+                                <div className=" my-0 px-md-3 px-1" >
 
                                     <div className="d-flex justify-content-between align-items-center ">
                                         <h3>Send a Message</h3>
@@ -206,11 +205,11 @@ function Home(props) {
                                     </div>
                                     <h5>we will contact you as soon as possible.</h5>
                                     <div className="row">
-                                        <div className="col-sm-6 my-3">
+                                        <div className="col-md-6 my-3">
                                             <input type="text" name='fname' className="border-0 border-bottom w-100" id="firstname" onChange={handleChange}
                                                 aria-describedby="emailHelp" placeholder="First Name" required={true} style={{ outline: "none" }} />
                                         </div>
-                                        <div className="col-sm-6 my-3">
+                                        <div className="col-md-6 my-3">
                                             <input type="text" name='lname' className="border-0 border-bottom w-100" id="lastname" onChange={handleChange}
                                                 aria-describedby="emailHelp" placeholder="Last Name" required={true} style={{ outline: "none" }} />
                                         </div>
@@ -254,7 +253,6 @@ function Home(props) {
                         </div>
                     </div>
                 </div>
-            </form>
             
         </>
 

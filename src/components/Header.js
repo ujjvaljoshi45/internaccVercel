@@ -15,7 +15,7 @@ function Header() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="  collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul className=" ms-auto navbar-nav">
+                        <ul className="ms-auto navbar-nav">
                             <li className="nav-item">
                                 <Link to="/" className="nav-link active" onClick={closeNavbar} aria-current="page" >HOME</Link>
                             </li>

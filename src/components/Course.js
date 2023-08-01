@@ -49,16 +49,16 @@ function Course(props) {
   return (
     <>
       <Header />
-      <h1 className="text-start ms-2 mt-4" style={{ fontSize: "45px", fontWeight: 700, fontFamily: "constantia" }} data-aos="fade-right">Explore Course</h1>
+      <h1 className="text-start ms-2 mt-4" style={{ fontSize: "2.5rem", fontWeight: 700, fontFamily: "constantia" }} data-aos="fade-right">Explore Course</h1>
 
-      <div className="container-fluid bg-secondary mt-4" data-aos="fade-up" style={{ minHeight: "60vh " }}>
+      <div className="container-fluid bg-secondary mt-4" data-aos="fade-up" style={{maxWidth:"99vw"}}>
 
       </div>
-      <div className="container-fluid px-md-5 px-1 mt-3 mb-4">
-        <h1 className="text-start" style={{ fontSize: "27px", fontWeight: "700" }}>Filters :</h1>
+      <div className="container-fluid px-md-5 px-0 mt-3 mb-4">
+        <h1 className=" ps-2 text-start" style={{ fontSize: "27px", fontWeight: "700" }}>Filters :</h1>
 
         <div className="container-fluid ">
-          <div className="row">
+          <div className="row ">
             <div className="col-4">
               <div className="form-group">
                 <label htmlFor="" className="form-label">Subject : </label>
@@ -79,7 +79,7 @@ function Course(props) {
             <div className="col-4">
               <div className="form-group">
                 <label htmlFor="" className="form-label">Age : </label>
-                <select name="" id="age" className="form-select" onChange={applyFilters}>
+                <select name="age" id="age" className="form-select" onChange={applyFilters}>
                   <option value={"all"}>{"All"}</option>
                   {[9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24].map((element,index)=>{
                     return <option key={index} value={element}>{element}</option>
@@ -103,10 +103,10 @@ function Course(props) {
           </div>
         </div>
 
-        <div className="row row-cols-xl-3 row-cols-lg-2 pt-4 row-cols-1 mt-2">
+        <div className="row row-cols-xl-3 row-cols-lg-2 pt-4 row-cols-1 mt-2 ">
           {courses.map((element, index) => {
-            return <div className="col" key={index}>
-              <Card img={"https://images.unsplash.com/photo-1616400619175-5beda3a17896?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN0dWR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"} title={element.name} description={element.description} id={element.$id} image={element.image} />
+            return <div className="col" key={index} style={{maxWidth:"100"}}>
+              <Card img={element.image} title={element.name} description={element.description} id={element.$id} image={element.image} />
             </div>
           })}
         </div>

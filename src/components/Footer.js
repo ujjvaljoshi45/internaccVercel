@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 function Footer() {
     return (
         <>
-            <div className="container-fluid py-4"  style={{ backgroundColor: "#EDEDED" }}>
+            <div className="container-fluid py-4 pb-4"  style={{ backgroundColor: "#EDEDED" }}>
                 <div className="container ">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-md-4" data-aos="fade-up">
@@ -38,7 +38,7 @@ function Footer() {
                     <hr className='d-block mx-auto mt-5' style={{ minHeight: "3px", backgroundColor: "#000000" }} />
                 </div>
 
-                <div className="container mx-auto   mt-5 d-flex flex-md-row flex-column justify-content-md-between justify-content-center align-items-center">
+                <div className="container mx-auto   mt-5 d-flex flex-md-row flex-column justify-content-md-between justify-content-center align-items-center pb-5">
                     <div className="card1  d-flex flex-column justify-content-center align-items-center" data-aos="fade-down" style={{ maxWidth: "300px" }}>
                         <img src="dark.png" alt="" className="img-fluid" style={{ maxHeight: "90px" }} />
                         <h5 className='text-center ps-3' style={{ fontSize: "30px", fontWeight: "700", letterSpacing: "3px" }}>INTERNACC</h5>
