@@ -58,9 +58,9 @@ function Course(props) {
         <h1 className=" ps-2 text-start" style={{ fontSize: "27px", fontWeight: "700" }}>Filters :</h1>
 
         <div className="container-fluid ">
-          <div className="row ">
-            <div className="col-4">
-              <div className="form-group">
+          <div className="row">
+            <div className=" col-4">
+              <div className="form-group ">
                 <label htmlFor="" className="form-label">Subject : </label>
                 <select name="" id="subject" className="form-select" onChange={applyFilters}>
                   <option value={"all"}>{"All"}</option>
@@ -76,8 +76,8 @@ function Course(props) {
                 </select>
               </div>
             </div>
-            <div className="col-4">
-              <div className="form-group">
+            <div className=" col-4">
+              <div className="form-group ">
                 <label htmlFor="" className="form-label">Age : </label>
                 <select name="age" id="age" className="form-select" onChange={applyFilters}>
                   <option value={"all"}>{"All"}</option>
@@ -87,8 +87,8 @@ function Course(props) {
                 </select>
               </div>
             </div>
-            <div className="col-4">
-              <div className="form-group">
+            <div className=" col-4">
+              <div className="form-group ">
                 <label htmlFor="" className="form-label">University : </label>
                 <select name="" id="university" className="form-select" onChange={applyFilters}>
                   <option value={"all"}>{"All"}</option>
@@ -103,7 +103,7 @@ function Course(props) {
           </div>
         </div>
 
-        <div className="row row-cols-xl-3 row-cols-lg-2 pt-4 row-cols-1 mt-2 ">
+        <div className="row g-0 row-cols-xl-3 row-cols-lg-2 pt-4 row-cols-1 mt-2 ">
           {courses.map((element, index) => {
             return <div className="col" key={index} style={{maxWidth:"100"}}>
               <Card img={element.image} title={element.name} description={element.description} id={element.$id} image={element.image} />

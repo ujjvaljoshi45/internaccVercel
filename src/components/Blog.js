@@ -64,7 +64,7 @@ function Blog(props) {
         <h3 className="text-start" data-aos="fade-up" style={{ color: "#C87437", fontFamily: "cookie", fontWeight: "400", fontSize: "75px" }}>
           Reading
         </h3>
-        <div className="row row-cols-xl-3  row-cols-lg-2 row-cols-1">
+        <div className="row g-0 row-cols-xl-3 row-cols-lg-2 row-cols-1">
           {blogs.map((element)=>{
             return <div className="col" key={element.$id} >
             <Blogcard heading={element.name} description1={element.shortdesc} id={element.$id} image={element.image}  />
