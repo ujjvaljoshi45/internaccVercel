@@ -17,7 +17,7 @@ function Accomodation() {
                 <h1 className="text-center my-4 mt-5" data-aos="fade-down">
                     WE ARE AVAILABLE IN
                 </h1>
-                <div className=" mt-5 row row-cols row-cols-2 row-cols-lg-3  mx-auto ">
+                <div className=" mt-5 row row-cols row-cols-2 row-cols-lg-4  mx-auto ">
                     <div className="col  thumb " data-aos="fade-down">
                         <img className="img-fluid d-block mx-auto" src="uk.png" alt="" />
                         <h3 className="text-center">United Kindgom</h3>
@@ -30,9 +30,14 @@ function Accomodation() {
                         <img className="img-fluid d-block mx-auto" src="canada.png" alt="" />
                         <h3 className="text-center">Canada</h3>
                     </div>
-                    
+                    <div className="col  thumb " data-aos="fade-down">
+                        <img className="img-fluid d-block mx-auto" src="aus.png" alt="" />
+                        <h3 className="text-center">Australia</h3>
+                    </div>
                 </div>
-                <div className=" mt-3 mb-5 row row-cols row-cols-2 row-cols-lg-3 mx-auto">
+                <div className=" mt-3 mb-5 row row-cols row-cols-2 row-cols-lg-4 mx-auto">
+                    <div className="col thumb d-lg-block d-none" data-aos="fade-down">
+                        </div>
                     <div className="col thumb " data-aos="fade-down">
                         <img className="img-fluid d-block mx-auto" src="ireland.png" alt="" />
                         <h3 className="text-center mt-1">Ireland</h3>
@@ -41,10 +46,7 @@ function Accomodation() {
                         <img className="img-fluid d-block mx-auto"  src="europe.png" alt="" />
                         <h3 className="text-center">Europe</h3>
                     </div>
-                    <div className="col  thumb " data-aos="fade-down">
-                        <img className="img-fluid d-block mx-auto" src="aus.png" alt="" />
-                        <h3 className="text-center">Australia</h3>
-                    </div>
+                    
                 </div>
             </div>
         </div >
