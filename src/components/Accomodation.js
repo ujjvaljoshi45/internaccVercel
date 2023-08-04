@@ -9,7 +9,7 @@ function Accomodation() {
             <Header />
             <div className="container">
                 <div className="row" data-aos="fade-right">
-                    <img src="worldmap.png" className="img-fluid" style={{width:"98vw"}} />
+                    <img src="worldmap.png" className="img-fluid" style={{ width:"98vw"}} />
                     
                 <h1 className="text-center mt-5 mb-3" data-aos="fade-up">Accomodations</h1>
                 <p className="text-center pb-4" data-aos="fade-up">We offer housing for international students in a number of nations, including the UK, USA, Canada, Australia, and Ireland. Most Convenient Housing: We make sure you are assigned to the most convenient housing option close to your university.</p><br />

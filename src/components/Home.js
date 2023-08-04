@@ -112,10 +112,10 @@ function Home(props) {
                                     Search
                                 </button>
                             </div>
-                            <div className="home-card mt-5 mx-md-0 w-md-auto mx-auto mt-4 border border-2 ps-2 border-dark rounded" style={{ width: "80%", maxWidth: "400px" }}>
-                                <div className="row rounded">
-                                    <div className="col-6 ms-1 p-md-2 p-1 rounded-start " style={{ backgroundColor: "#FFFFFF" }}><h5>Be The First</h5><h6>Apply For Internship</h6><h6>And Accomodation</h6></div>
-                                    <div className="col-5 d-flex justify-content-center align-items-center">
+                            <div className="home-card mt-5 mx-md-0 w-md-auto mx-auto mt-4  rounded" style={{ width: "80%", maxWidth: "400px" }}>
+                                <div className="row rounded bg-light">
+                                    <div className="col-6 p-md-2 p-1 rounded-start border border-2 border-dark" ><h5>Be The First</h5><h6>Apply For Internship & Accomodation</h6></div>
+                                    <div className="col-6 rounded-end d-flex justify-content-center align-items-center border border-2 border-dark">
                                         <button className="btn btn-primary" style={{ backgroundColor: "#315A75", borderColor: '#315A75' }} onClick={() => { document.getElementById("modalBtn").click() }}>
                                             Apply Now
                                         </button>
