@@ -108,7 +108,7 @@ function Home(props) {
                             }}>Internship <span>|</span> Accomodation</h1>
                             <div className="search-bar mt-4 d-flex mx-auto mx-md-0">
                                 <input type="text" name="search" id="search" className="form-control" placeholder='Search' style={{ maxWidth: "250px" }} onChange={(e) => { updateSearchQuery(e.target.value) }} />
-                                <button className="ms-4 btn btn-primary px-4" style={{ backgroundColor: "#315A75" }} onClick={searchCourse}>
+                                <button className="ms-4 btn btn-primary px-4" style={{ backgroundColor: "#315A75", borderColor: "#315A75"}} onClick={searchCourse}>
                                     Search
                                 </button>
                             </div>
