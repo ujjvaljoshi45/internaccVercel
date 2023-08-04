@@ -21,7 +21,7 @@ function Adminblog(props) {
 
     const handleSubmit = () => {
         const today = new Date().toISOString()
-        console.log(today);
+        // console.log(today);
 
         if (data.blog == "" || data.image == "" || data.keyword == "" || data.shortdesc == "" || data.desc == "") { } else {
             const client = new Client();
@@ -29,7 +29,7 @@ function Adminblog(props) {
                 .setEndpoint('https://cloud.appwrite.io/v1')
                 .setProject('64b92b85162ae2a4bba8');
 
-            console.log(document.getElementById('formFile').files[0]);
+            // console.log(document.getElementById('formFile').files[0]);
             const storage = new Storage(client);
             let imageUrl = null;
             const addImagePromise = storage.createFile('64be8194bceeca42c8ea', ID.unique(), document.getElementById('formFile').files[0]);
@@ -37,8 +37,8 @@ function Adminblog(props) {
                 const imageId = response.$id
                 const fileUrl = storage.getFileView('64be8194bceeca42c8ea', imageId)
                 imageUrl = fileUrl.href
-                console.log(imageUrl);
-                console.log(response); // Success
+                // console.log(imageUrl);
+                // console.log(response); // Success
                 setTimeout(() => {
                     const database = new Databases(client);
                     const promise = database.createDocument('64b92e033b36ffa5f41d', '64b92e39d4da1ba6d01a', ID.unique(), {
@@ -50,7 +50,7 @@ function Adminblog(props) {
                         timestamp: today,
                     });
                     promise.then(function (response) {
-                        console.log(response.documents);
+                        // console.log(response.documents);
                         updateData(response.documents);
                         window.location.reload();
                     }).catch(function (error) {
@@ -63,7 +63,7 @@ function Adminblog(props) {
 
 
         }
-        console.log(data)
+        // console.log(data)
     }
     useEffect(() => {
         if (sessionStorage.getItem('interacc-admin-login') == "true") {
@@ -79,12 +79,12 @@ function Adminblog(props) {
         const database = new Databases(client);
         const promise = database.deleteDocument('64b92e033b36ffa5f41d', '64b92e39d4da1ba6d01a', e.target.id);
         promise.then(function (response) {
-            console.log(response);
+            // console.log(response);
             window.location.reload();
         }).catch(function (error) {
             console.log(error);
         });
-        console.log(e.target.id);
+        // console.log(e.target.id);
     }
     return (
         <>

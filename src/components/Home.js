@@ -44,7 +44,7 @@ function Home(props) {
                 subject: data.topic,
             });
             promise.then(function (response) {
-                console.log(response);
+                // console.log(response);
                 document.getElementById("closeBtn").click()
                 toast.success("Your message has been sent.")
             }).catch(function (error) {
@@ -52,7 +52,7 @@ function Home(props) {
                 toast.error("Something went wrong.")
             });
         }
-        console.log(data);
+        // console.log(data);
     }
 
     // function for seraching course
@@ -68,7 +68,7 @@ function Home(props) {
             Query.search("name", searchValue),
         ]);
         promise.then(function (response) { 
-            console.log(response);
+            // console.log(response);
             if(response.total === 0){
                 toast.error("Course Does not exist.")
             }else{
@@ -81,7 +81,7 @@ function Home(props) {
             toast.error("Course Does not exist.")
          });
        
-        console.log(searchQuery);
+        // console.log(searchQuery);
     }
     useEffect(() => {
         setTimeout(() => {
@@ -132,12 +132,8 @@ function Home(props) {
             <div className="container-fluid pt-5" style={{ backgroundColor: "#FFFFFF", minHeight: "70vh" }} data-aos="fade-up">
                 <h1 className="text-center " style={{ fontWeight: "700", fontSize: "48px" }}>What we do</h1>
 
-                <div className="do-texts mt-5">
-                    <h3 className='text-center' style={{ fontWeight: "400", fontSize: "22px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum.</h3>
-                    <h3 className='text-center' style={{ fontWeight: "400", fontSize: "22px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum.</h3>
-                    <h3 className='text-center' style={{ fontWeight: "400", fontSize: "22px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum.</h3>
-                    <h3 className='text-center' style={{ fontWeight: "400", fontSize: "22px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum.</h3>
-                    <h3 className='text-center' style={{ fontWeight: "400", fontSize: "22px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum.</h3>
+                <div className="do-texts mt-5 mx-auto " style={{maxWidth:"700px "}}>
+                    <h3 className='text-center' style={{ fontWeight: "400", fontSize: "22px" }}>We are a leading global provider of international internships and student accommodation solutions. With a strong focus on facilitating meaningful professional experiences for students and young professionals, we strive to connect talented individuals with reputable organizations across various industries.  </h3>
                 </div>
             </div>
             <Carousel />
@@ -181,9 +177,9 @@ function Home(props) {
                     <h1 className="text-start my-5 w-50 ms-md-5 ms-2 text-light" style={{}}>
                         Get more informations about internship and Accomodations
                     </h1>
-                    <button className="btn btn-light d-block ms-md-5 ms-2 px-4 fs-5">Read More</button>
+                    <button className="btn btn-light d-block ms-md-5 ms-2 px-4 fs-5" onClick={()=>{navigate("/course")}}>Read More</button>
                 </div>
-                <div className="card2 bg-secondary rounded d-md-inline-block" style={{ position: "absolute", minHeight: "50vh", width: "50%", right: 0, top: "8vh", zIndex: 5 }}></div>
+                <div className="card2 rounded d-md-inline-block" style={{ position: "absolute", minHeight: "50vh", width: "50%", right: 0, top: "8vh", zIndex: 5 ,backgroundImage:"url('readmore_img.jpeg')",backgroundPosition:"center"}}></div>
             </div>
 
 

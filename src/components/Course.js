@@ -8,7 +8,7 @@ function Course(props) {
   const [university, updateUniversity] = useState([])
   const [courses, updateCourses] = useState([])
   const { course } = props
-  console.log(course);
+  // console.log(course);
 
   useEffect(() => {
 
@@ -18,8 +18,8 @@ function Course(props) {
       tempSubjList.push(element.subject)
       tempUnivList.push(element.university)
     });
-    console.log(tempSubjList);
-    console.log(tempUnivList);
+    // console.log(tempSubjList);
+    // console.log(tempUnivList);
 
     function removeDuplicates(tempSubjList) {
       return [...new Set(tempSubjList)];

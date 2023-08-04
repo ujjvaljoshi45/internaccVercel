@@ -28,7 +28,7 @@ function Aboutus() {
           </p>
         </div>
         <div className="row mb-5">
-          <div className="col-md-6 bg-secondary" data-aos="fade-up">
+          <div className="col-md-6" data-aos="fade-up" style={{backgroundImage:"url('Vission.png')",backgroundRepeat:"no-repeat",backgroundSize:"cover",backgroundPosition:"center"}}>
 
           </div>
           <div className="col-md-6 py-5 px-4" data-aos="fade-down" style={{ backgroundColor: "#273F4F" }}>
@@ -96,7 +96,7 @@ function Aboutus() {
               Seamless Accommodation Solutions :
               We are committed to providing students with safe, comfortable, and affordable accommodation options in their host countries. Our mission is to ensure that students can focus on their internships and studies, knowing that they have a supportive and secure living environment.
             </p></div>
-          <div className="col-md-6 bg-secondary" data-aos="fade-down"></div>
+          <div className="col-md-6" data-aos="fade-down" style={{backgroundImage:"url('Mission.png')",backgroundRepeat:"no-repeat",backgroundSize:"cover",backgroundPositionX:"center"}}></div>
         </div>
 
         <h1 style={{
@@ -115,14 +115,14 @@ function Aboutus() {
             <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 0 }}>University Name</h5>
           </div>
           <div className='offset-md-1 col-md-3 my-4 rounded mx-auto' style={{ backgroundColor: "#D7D7D7", minHeight: "400px", position: "relative", maxWidth: "350px", backgroundImage: "url('ht.jpg')", backgroundPosition: "center", backgroundSize: "cover" }}>
-            <h4 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 48 }}>Hanut Trivedi</h4>
-            <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 22 }}>Co-founder & CEO</h5>
-            <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 0 }}>University Name</h5>
+            <h4 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 74 }}>Hanut Trivedi</h4>
+            <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 50 }}>Co-founder & CEO</h5>
+            <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 0 }}>Charotar University of Science and Technology</h5>
           </div>
           <div className='offset-md-1 col-md-3 my-4 rounded mx-auto' style={{ backgroundColor: "#D7D7D7", minHeight: "400px", position: "relative", maxWidth: "350px", backgroundImage: "url('nt.jpg')", backgroundPosition: "center", backgroundSize: "cover" }}>
-            <h4 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 48 }}>Nishi Thacker</h4>
-            <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 22 }}>Co-founder & Director</h5>
-            <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 0 }}>University Name</h5>
+            <h4 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 74 }}>Nishi Thacker</h4>
+            <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 50 }}>Co-founder & Director</h5>
+            <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 0 }}>The Maharaja Sayajirao University of Baroda</h5>
           </div>
         </div>
       </div>

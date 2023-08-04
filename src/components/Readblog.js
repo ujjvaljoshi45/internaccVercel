@@ -9,7 +9,7 @@ function Readblog(props) {
 
     const course = props.course
     const blogs = props.blogs
-    console.log(blogs);
+    // console.log(blogs);
     useEffect(() => {
         
         course.forEach(element => {

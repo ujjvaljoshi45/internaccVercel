@@ -23,7 +23,7 @@ function Blog(props) {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (data.fname === "" || data.lname === "" || data.email === "" || data.phone === "" || data.datetime === "" || data.how === "") {
-      console.log("Please fill all the fields.");
+      // console.log("Please fill all the fields.");
       toast.error("Please fill all the fields.")
     } else {
     const client = new Client();
@@ -41,7 +41,7 @@ function Blog(props) {
                 subject: "Blog Contact",
             });
             promise.then(function (response) {
-                console.log(response);
+                // console.log(response);
                 toast.success("Your message has been sent.")
             }).catch(function (error) {
                 console.log(error);
@@ -57,7 +57,7 @@ function Blog(props) {
     <>
     <ToastContainer />
       <Header />
-      <div className="container-fluid bg-secondary d-flex align-items-end justify-content-center" data-aos="fade-up" style={{ height: "50vh" }}>
+      <div className="container-fluid d-flex align-items-end justify-content-center" data-aos="fade-up" style={{ minHeight: "30vh",backgroundColor:"#273F4F" }}>
         <h1 className="text-center mb-5" style={{ fontWeight: 700, fontSize: "50px", color: "#ffffff" }}>Our Latest Blogs</h1>
       </div>
       <div className="container-fluid px-3 my-5">

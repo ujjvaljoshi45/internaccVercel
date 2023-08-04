@@ -35,7 +35,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(data);
+    // console.log(data);
     if(data.fname===""||data.lname===""||data.email===""||data.phone===""||data.datetime===""||data.how===""){
       alert("Please fill all the fields.") } else {
         const client = new Client();
@@ -53,7 +53,7 @@ function Contact() {
                 subject: "(" + data.topic + ")" + " " + data.subject,
             });
             promise.then(function (response) {
-                console.log(response);
+                // console.log(response);
                 toast.success("Your message has been sent.")
             }).catch(function (error) {
                 console.log(error);

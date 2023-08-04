@@ -15,7 +15,7 @@ function Adminaccomodation() {
         updaeData({ ...data, [e.target.name]: e.target.value })
     }
     const handleSubmit = () => {
-        console.log(data)
+        // console.log(data)
     }
     useEffect(()=>{
         if(sessionStorage.getItem('interacc-admin-login') == 'true'){
