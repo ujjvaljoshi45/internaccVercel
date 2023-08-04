@@ -109,7 +109,7 @@ function Aboutus() {
         }} data-aos="fade-right">Core Team</h1>
         <div className="row mb-5 text-light" data-aos="fade-down">
 
-          <div className='offset-md-1 col-md-3 my-4 mx-auto' style={{ backgroundColor: "#D7D7D7", minHeight: "400px", position: "relative", maxWidth: "350px", backgroundImage: "url('mh.png')", backgroundPosition: "center", backgroundSize: "cover" }}>
+          <div className='offset-md-1 col-md-3 my-4 rounded mx-auto' style={{ backgroundColor: "#D7D7D7", minHeight: "400px", position: "relative", maxWidth: "350px", backgroundImage: "url('mh.png')", backgroundPosition: "center", backgroundSize: "cover" }}>
             <h4 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 48 }}>Mary Hiwale</h4>
             <h5 style={{ fontFamily: 'Source Sans Pro', fontWeight: 600, position: "absolute", bottom: 22 }}>Co-founder</h5>
           </div>
