@@ -31,7 +31,7 @@ function Readblog(props) {
             <Header />
             <div className="container px-lg-5 px-md-3 px-1">
                 <h1 className="text-start my-2" style={{ fontSize: "2rem", fontWeight: "600", textTransform: "capitalize" }} data-aos="fade-right">{data.name}</h1>
-                {data.maxCost && <h5 className="ms-1 mt-0 mb-md-3 text-secondary d-md-inline-block">Price : {data.minCost} - {data.maxCost} INR</h5>}
+                {data.maxCost && <h5 className="ms-1 mt-0 mb-md-3 text-secondary d-md-inline-block">Price : {data.minCost} - {data.maxCost} GBP</h5>}
                 {data.duration && <h5 className="mt-0 mb-3 ms-md-5 ms-1 text-secondary d-md-inline-block">Duration : {data.duration} Months</h5>}
                     <img src={data.image} alt="" className="img-fluid mx-auto d-block mx-auto " data-aos="fade-down" style={{ maxHeight: "30rem"}}/>
 

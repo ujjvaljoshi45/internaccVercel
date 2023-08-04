@@ -129,7 +129,7 @@ function Home(props) {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid pt-5" style={{ backgroundColor: "#FFFFFF", minHeight: "70vh" }} data-aos="fade-up">
+            <div className="container-fluid pt-5" style={{ backgroundColor: "#FFFFFF", minHeight: "50vh" }} data-aos="fade-up">
                 <h1 className="text-center " style={{ fontWeight: "700", fontSize: "48px" }}>What we do</h1>
 
                 <div className="do-texts mt-5 mx-auto " style={{maxWidth:"700px "}}>
@@ -142,19 +142,19 @@ function Home(props) {
                 <h2 className="mt-5 text-center mb-5" style={{ fontWeight: "700", fontSize: "40px" }}>Build your profile stronger with our internship</h2>
                 <div className="row">
                     <div className="col-md-4">
-                        <Linkcards title="Business & Enterprenuership" />
+                        <Linkcards title="Enterprenuership" />
                     </div>
                     <div className="col-md-4">
-                        <Linkcards title="Business & Enterprenuership" />
+                        <Linkcards title="Art & Humanities" />
                     </div>
                     <div className="col-md-4">
-                        <Linkcards title="Business & Enterprenuership" />
+                        <Linkcards title="Medicine" />
                     </div>
                     <div className="col-md-4">
-                        <Linkcards title="Business & Enterprenuership" />
+                        <Linkcards title="Innovation & Technology" />
                     </div>
                     <div className="col-md-4">
-                        <Linkcards title="Business & Enterprenuership" />
+                        <Linkcards title="Economics" />
                     </div>
                     <div className="col-md-4">
                         <div className="linkcard rounded border border-2 border-dark px-lg-5 px-2 py-4 w-100 my-4" style={{ backgroundColor: "#315A75" }} >
