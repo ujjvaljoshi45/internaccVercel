@@ -51,11 +51,21 @@ function Footer() {
                     </div>
                     <div className="card2 d-flex flex-column justify-content-center" data-aos="fadedown" style={{ maxWidth: "300px" }}>
                         <div className='d-flex justify-content-center gap-3'>
-                            <i className="bi bi-instagram" style={{ fontSize: "30px" }}></i>
-                            <i className="bi bi-facebook" style={{ fontSize: "30px" }}></i>
-                            <i className="bi bi-linkedin" style={{ fontSize: "30px" }}></i>
-                            <i className="bi bi-twitter" style={{ fontSize: "30px" }}></i>
-                            <i className="bi bi-youtube" style={{ fontSize: "30px" }}></i>
+                        <a href='https://instagram.com/intern_acc?igshid=NjIwNzIyMDk2Mg==' target="_blank" style={{ color: 'inherit'}}>
+                        <i className="bi bi-instagram" style={{ fontSize: "30px" }}></i>
+                        </a>
+                        <a href='https://www.facebook.com/profile.php?id=100094004212143' target="_blank" style={{ color: 'inherit'}} >
+                        <i className="bi bi-facebook" style={{ fontSize: "30px" }}></i>
+                        </a>
+                        <a href='https://www.linkedin.com/company/intern-acc/' target="_blank" style={{ color: 'inherit'}} >
+                        <i className="bi bi-linkedin" style={{ fontSize: "30px" }}></i>
+                        </a>
+                        <a href='' target="_blank" style={{ color: 'inherit'}} >
+                        <i className="bi bi-twitter" style={{ fontSize: "30px" }}></i>
+                        </a>
+                        <a href='' target="_blank" style={{ color: 'inherit'}} >
+                        <i className="bi bi-youtube" style={{ fontSize: "30px" }}></i>
+                        </a>
                         </div>
                     </div>
                 </div>

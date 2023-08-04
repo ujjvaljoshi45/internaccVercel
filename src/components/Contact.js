@@ -125,9 +125,8 @@ function Contact() {
             <div className="mx-md-5 mx-auto w-100 py-3  rounded mb-5" data-aos="fade-up" style={{backgroundColor:"#315A75"}}>
                 <h3 className='text-center text-light '>Contact Us</h3>
                 <div className="text ps-4 mt-4">
-                  <h1 className="text-start text-light my-3" style={{fontSize:"16px",fontFamily:"karta"}}> <i className="bi bi-phone me-3"></i> +917435878256</h1>
-                  <h1 className="text-start text-light my-3" style={{fontSize:"16px",fontFamily:"karta"}}> <i className="bi bi-phone me-3"></i> +917405123400</h1>
-                  <h1 className="text-start text-light my-3" style={{fontSize:"16px",fontFamily:"karta"}}> <i className="bi bi-envelope me-3"></i> SUPPORT@INTERNACC.COM</h1>
+                  <h1 className="text-start text-light my-3" style={{fontSize:"16px",fontFamily:"karla"}}> <i className="bi bi-phone me-3"></i> +91 74051 23444</h1>
+                  <h1 className="text-start text-light my-3" style={{fontSize:"16px",fontFamily:"karla"}}> <i className="bi bi-envelope me-3"></i> support@internacc.com</h1>
                 </div>
             </div>
           </div>
