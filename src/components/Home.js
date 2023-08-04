@@ -166,13 +166,10 @@ function Home(props) {
 
             {/* TODO why us */} <Whyus />
 
-            <div className="container-fluid mt-5" style={{ minHeight: "70vh", backgroundColor: "#ffffff" }} data-aos="fade-up">
-                <h3 className="text-center mb-5 my-md-1 my-4" style={{ fontSize: "48px", fontWeight: "700" }}>Meet Our Team</h3>
-                <div className="video w-100 bg-secondary" style={{ minHeight: "50vh" }}></div>
-            </div>
+                            
 
 
-            <div className="container" data-aos="fade-up" style={{ position: "relative", minHeight: "70vh" }}>
+            <div className="container mt-5" data-aos="fade-up" style={{ position: "relative", minHeight: "70vh" }}>
                 <div className="card1 rounded" style={{ position: "absolute", width: "60%", backgroundColor: "#315A75", minHeight: "65vh", zIndex: 0 }}>
                     <h1 className="text-start my-5 w-50 ms-md-5 ms-2 text-light" style={{}}>
                         Get more informations about internship and Accomodations
