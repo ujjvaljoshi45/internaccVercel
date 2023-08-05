@@ -206,7 +206,7 @@ function Admincourse(props) {
                                     <td className='ps-2 fs-5'>{element.subject}</td>
                                     <td className='ps-2 fs-5'>{element.minAge} - {element.maxAge}</td>
                                     <td className='ps-2 fs-5'>{element.description}</td>
-                                    <td className='ps-2 fs-5'>{element.price}</td>
+                                    <td className='ps-2 fs-5'>{element.maxCost}</td>
                                     <td className='ps-2 fs-5'><button id={element.$id} className="btn btn-danger my-1 mx-auto d-block px-2" onClick={handleDelete}>Delete</button></td>
                                 </tr>
                             })}
