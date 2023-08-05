@@ -1,3 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
-User-agent: *
+User-agent: Media partners-Google
 Disallow:
+User-agent: *
+Disallow: /search
+Allow: /
