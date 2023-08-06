@@ -1,7 +1,0 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: Media partners-Google
-Disallow:
-User-agent: *
-Disallow: /search
-Allow: /
-Sitemap: https://www.internacc.com/sitemap.xml
