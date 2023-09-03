@@ -95,7 +95,7 @@ function Home(props) {
         <>
             <ToastContainer />
             <Header />
-            <a href="#" className=' p-4 text-decoration-none d-flex justify-content-center align-items-center rounded' style={{width:"70px",height:"60px",position:"fixed",bottom:38,right:18,backgroundColor:"#25D366", zIndex: 12}}><i className="fs-1 bi bi-whatsapp m-2 text-light" style={{ fontSize: "30px" }}></i></a>
+            <a href="https://wa.me/+917405123444?text=" target='_blank' className=' p-4 text-decoration-none d-flex justify-content-center align-items-center rounded' style={{width:"70px",height:"60px",position:"fixed",bottom:38,right:18,backgroundColor:"#25D366", zIndex: 12}}><i className="fs-1 bi bi-whatsapp m-2 text-light" style={{ fontSize: "30px" }}></i></a>
             
             <div className="container-fluid " style={{ minHeight: "600px", backgroundColor: "rgba(224, 224, 224, 1)" }}>
                 <div className="container pt-3 d-flex justify-content-center  d-md-block">
