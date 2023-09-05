@@ -14,12 +14,12 @@
   <changefreq>monthly</changefreq>
   <priority>1.00</priority>
   <title>Internacc</title>
+  <image>
+  <loc>https://www.internacc.com/dark.png</loc>
+  <title>Internacc</title>
+  <family_friendly>Yes</family_friendly>
+</image>
 </url>
-<image:image>
-  <image:loc>https://www.internacc.com/dark.png</image:loc>
-  <image:title>Internacc</image:title>
-  <image:family_friendly>Yes</image:family_friendly>
-</image:image>
 
 
 
